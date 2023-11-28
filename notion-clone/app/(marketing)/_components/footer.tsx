@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 
 import { Logo } from "./logo"
+import Link from "next/link"
 
 export const Footer = () => {
   return (
@@ -8,10 +9,17 @@ export const Footer = () => {
       <Logo />
       <div className="md:ml-auto w-full justify-between md:justify-end flex items-center gap-x-2 text-muted-foreground">
         <Button variant="ghost" size="sm">
-          Privacy Policy
+          <Link href="https://github.com/Akhilesh-pujar">
+           GitHub
+          </Link>
+         
         </Button>
         <Button variant="ghost" size="sm">
-          Terms & Conditions
+          <Link href="https://www.linkedin.com/in/akhileshpujar/">
+          Linkdin
+          
+          </Link>
+          
         </Button>
       </div>
     </div>
